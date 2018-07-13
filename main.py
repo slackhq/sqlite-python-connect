@@ -1,8 +1,8 @@
 #
 # Pre-requisites:
-# Python2.5+ with sqlite3  - pysqlite is available in your python installation (included in the standard library (since Python 2.5))
+# Python2.5+ with sqlite3  - pysqlite is available in your python installation (included in the standard library since Python 2.5)
 #
-# This will print 10 rows from teams and users table
+# This script will print 10 rows from teams and users table
 #
 
 
@@ -21,4 +21,5 @@ def main():
       print(row)
 
 
-main()
+if __name__ == '__main__':
+    main()
