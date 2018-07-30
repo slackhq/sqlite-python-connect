@@ -11,13 +11,13 @@ import sqlite3 # assumes you already have sqlite3
 
 def main():
 
-    db = sqlite3.connect('appeng_onsite_db')
+    db = sqlite3.connect('sample.db')
     cursor = db.cursor()
 
-    for row in cursor.execute('SELECT * from teams limit 10'):
+    for row in cursor.execute('SELECT * from teams'):
       print(row)
 
-    for row in cursor.execute('SELECT * from users limit 10'):
+    for row in cursor.execute('SELECT * from users'):
       print(row)
 
 
