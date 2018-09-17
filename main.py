@@ -11,13 +11,13 @@ import sqlite3 # assumes you already have sqlite3
 
 def main():
 
-    db = sqlite3.connect('sample.db')
+    db = sqlite3.connect('movies.db')
     cursor = db.cursor()
 
-    for row in cursor.execute('SELECT * from teams'):
+    for row in cursor.execute('SELECT * from movies'):
       print(row)
 
-    for row in cursor.execute('SELECT * from users'):
+    for row in cursor.execute('SELECT * from actors'):
       print(row)
 
 
